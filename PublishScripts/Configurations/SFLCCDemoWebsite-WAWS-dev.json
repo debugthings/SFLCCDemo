@@ -1,0 +1,21 @@
+{
+    "environmentSettings": {
+        "webSite": {
+            "name": "SFLCCDemoWebsite",
+            "location": "East US 2"
+        },
+        "databases": [
+            {
+                "connectionStringName": "DefaultConnection",
+                "databaseName": "SFLCCDemoWebsite_db",
+                "serverName": "g5wysogmyv",
+                "user": "sflccdemo",
+                "password": "",
+                "edition": "",
+                "size": "",
+                "collation": "",
+                "location": "East US 2"
+            }
+        ]
+    }
+}

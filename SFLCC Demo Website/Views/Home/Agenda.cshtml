@@ -1,0 +1,60 @@
+﻿@model SFLCC_Demo_Website.Models.AgendaViewModel
+
+@{
+    ViewBag.Title = "Agenda";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="sflcc-headerbox">
+    <div class="sflcc-header color-beach-m-bg">
+        <ul class="smallText">
+            @foreach (var item in Model.Tracks)
+            {
+                <li>@Html.ActionLink(item.TrackName.ToUpper(), "Agenda", "Home", new { id = item.TrackId }, new { })</li>
+            }
+        </ul>
+    </div>
+</div>
+<div class="sflcc-headerbox">
+    <div class="sflcc-header color-beach-e-bg">
+        @using (Html.BeginForm("Agenda", "Home"))
+        {
+            <p>Search Approved Sessions</p>
+            <div>
+                @Html.TextBox("searchstring")
+                <input type="submit" value="Search" />
+            </div>
+        }
+    </div>
+
+</div>
+
+@foreach (var item in Model.Sessions)
+{
+    if (item.Speaker != null)
+    {
+        <div class="sflcc-headerbox">
+            <div class=" sflcc-header color-beach-d-bg sflcc-header-left">
+                <h1>@Html.DisplayFor(modelItem => item.SessionName)</h1>
+                @if (item.Speaker.SpeakerId != null)
+                {
+                    <h2>@Html.ActionLink(item.Speaker.SpeakerName, "Speaker", "Home", new { id = item.Speaker.SpeakerId }, new { }) | @Html.DisplayFor(modelItem => item.Slot.Track.TrackName) | @Html.DisplayFor(modelItem => item.Slot.Slot.SessionStart, "{0:hh:mm tt}") to @Html.DisplayFor(modelItem => item.Slot.Slot.SessionEnd, "{0:hh:mm tt}")</h2>
+                } else {
+                    <h2>@Html.DisplayFor(modelItem => item.Speaker.SpeakerName) | @Html.DisplayFor(modelItem => item.Slot.Track.TrackName) | @Html.DisplayFor(modelItem => item.Slot.Slot.SessionStart, "{0:hh:mm tt}") to @Html.DisplayFor(modelItem => item.Slot.Slot.SessionEnd, "{0:hh:mm tt}")</h2>
+                }
+                <p> @Html.DisplayFor(modelItem => item.SessionDescription)</p>
+            </div>
+
+        </div>
+    }
+}
+
+@section scripts
+{
+    <script>
+        jQuery.fx.interval = 33;
+        $(".sflcc-header-left h1").click(function () {
+            $(this).next().next().slideToggle();
+        });
+    </script>
+}

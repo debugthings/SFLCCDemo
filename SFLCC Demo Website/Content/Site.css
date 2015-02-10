@@ -1,0 +1,442 @@
+﻿body, html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+body {
+    /*background-image: url("../img/Miami_Skyline-4369_4370_HDR.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.sflcc-headerbox a {
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    display: inline-block;
+}
+
+    .sflcc-headerbox a:hover {
+        text-shadow: 3px 0 0 #333;
+    }
+
+.sflcc-headerbox ul {
+    display: flex;
+    display: flexbox;
+    display: inline-flexbox;
+    display: -ms-flexbox;
+    display: -ms-inline-flexbox;
+    -ms-flex: inherit;
+    flex: inherit;
+    -ms-flex-wrap: inherit;
+    flex-wrap: inherit;
+    flex-wrap: inherit;
+    flex: inherit;
+    -ms-flex-item-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+    min-width: 98%;
+    max-width: 100%;
+}
+
+    .sflcc-headerbox ul li {
+        display: inline;
+        margin: 0 1em 0 1em;
+    }
+
+.percent-20 {
+    min-height: 20% !important;
+}
+
+.percent-30 {
+    min-height: 30% !important;
+}
+
+.percent-40 {
+    min-height: 40% !important;
+}
+
+.percent-50 {
+    min-height: 50% !important;
+}
+
+.percent-60 {
+    min-height: 60% !important;
+}
+
+.percent-70 {
+    min-height: 70% !important;
+}
+
+.percent-80 {
+    min-height: 80% !important;
+}
+
+.percent-90 {
+    min-height: 90% !important;
+}
+
+p {
+    margin: 0px;
+    font-size: 2em;
+    line-height: 1.8em;
+    padding: 2em;
+}
+
+h1.toponly {
+    padding-top: 1em;
+}
+
+.sflcc-headerbox {
+    display: flex;
+    display: flexbox;
+    display: -ms-flexbox;
+    -ms-flex: inherit;
+    flex: inherit;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: white;
+    opacity: 0.9;
+    max-width: 100%;
+}
+
+.sflcc-header {
+    max-width: 100%;
+    min-width: 98%;
+    padding: 1%;
+}
+
+
+
+.txt-shadow {
+    text-shadow: 6px 6px 6px #333;
+}
+
+.color-beach-b {
+    color: #FF8642;
+}
+
+.color-beach-b-bg {
+    background-color: #FF8642;
+}
+
+.color-beach-c {
+    color: #F4DCB5;
+}
+
+.color-beach-c-bg {
+    background-color: #F4DCB5;
+}
+
+.color-beach-d {
+    color: #816C5B;
+}
+
+.color-beach-d-bg {
+    background-color: #816C5B;
+}
+
+.color-beach-l {
+    color: #97EAF4;
+}
+
+.color-beach-l-bg {
+    background-color: #97EAF4;
+}
+
+
+.color-beach-m {
+    color: #007996;
+}
+
+.color-beach-m-bg {
+    background-color: #007996;
+}
+
+.color-beach-o {
+    color: rgb(95,216,250);
+}
+
+.color-beach-o-bg {
+    background-color: rgb(95,216,250);
+}
+
+
+.color-beach-i {
+    color: #E5F3CF;
+}
+
+.color-beach-i-bg {
+    background-color: #E5F3CF;
+}
+
+.color-beach-j {
+    color: #0097AC;
+}
+
+.color-beach-j-bg {
+    background-color: #0097AC;
+}
+
+
+
+.cd-fixed-bg {
+    position: relative;
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+}
+
+    .cd-fixed-bg h1, .cd-fixed-bg h2 {
+        text-align: center;
+        font-size: 30px;
+        font-size: 1.875rem;
+        margin: 0;
+    }
+
+    .cd-fixed-bg h2, .cd-fixed-bg h3 {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        bottom: auto;
+        right: auto;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -o-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        width: 90%;
+        max-width: 1170px;
+    }
+
+    .cd-fixed-bg.cd-bg-1 {
+        background-image: url("../img/Miami_Skyline-4369_4370_HDR.jpg");
+    }
+
+    .cd-fixed-bg.cd-bg-2 {
+        background-image: url("../img/code-wallpaper-2.jpg");
+    }
+
+    .cd-fixed-bg.cd-bg-3 {
+        background-image: url("../img/Meeting-classroom-large-1024x678.jpg");
+    }
+
+    .cd-fixed-bg.cd-bg-4 {
+        background-image: url("../img/cd-background-4.jpg");
+    }
+
+@media only screen and (min-width: 768px) {
+    .cd-fixed-bg h1, .cd-fixed-bg h2 {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+    .cd-fixed-bg {
+        background-attachment: fixed;
+    }
+
+        .cd-fixed-bg h1, .cd-fixed-bg h2 {
+            font-size: 48px;
+            font-weight: 800;
+        }
+}
+
+.cd-scrolling-bg {
+    position: relative;
+    min-height: 100%;
+    padding: 4em 0;
+    line-height: 1.6;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+    .cd-scrolling-bg.cd-color-1 {
+        background-color: #3d3536;
+        color: #a6989a;
+    }
+
+    .cd-scrolling-bg.cd-color-2 {
+        background-color: #99a478;
+        color: #3d3536;
+    }
+
+    .cd-scrolling-bg.cd-color-3 {
+        background-color: #b4d7a8;
+        color: #3d3536;
+    }
+
+.sflcc-header-left {
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    text-align: left;
+    background-color: #816c5b;
+}
+
+    .sflcc-header-left h1 {
+        text-align: left;
+        font-size: 30px;
+        font-size: 1.875rem;
+        margin: 0;
+    }
+
+    .sflcc-header-left h2 {
+        text-align: left;
+    }
+
+    .sflcc-header-left p {
+        font-size: 1.5em;
+        display: none;
+    }
+
+    .sflcc-header-left h1, .sflcc-header-left h2 {
+        text-align: left;
+        font-size: 30px;
+        font-size: 1.875rem;
+        margin: 0;
+    }
+
+    .sflcc-header-left h2, .sflcc-header-left h3 {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        width: 100%;
+        max-width: 100%;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+        padding-top: .5em;
+    }
+
+
+div.sflcc-headerbox:nth-of-type(2n+1) .sflcc-header-left {
+    background-color: #4a3f36;
+}
+
+@media only screen and (min-width: 768px) {
+    .sflcc-header-left h1 {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+
+    .sflcc-header-left h1 {
+        font-size: 48px;
+        font-weight: 800;
+    }
+}
+
+input {
+    font-size: 1.2em;
+}
+
+    input[type=text] {
+        min-width: 30%;
+    }
+
+form {
+    width: 100%;
+    display: flexbox;
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    justify-content: center;
+    align-items: baseline;
+}
+
+    form p {
+        padding: .25em;
+        color: black;
+    }
+
+ul.smallText {
+    font-size: .75em;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    max-width: 98%;
+}
+
+    ul.smallText li {
+        width: 12.5%;
+        margin-top: 1em;
+    }
+
+h2 > a {
+    text-decoration: underline !important;
+}
+
+ul.speakerflex {
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+    ul.speakerflex li {
+        background: tomato;
+        padding: 5px;
+        width: 200px;
+        margin-top: 10px;
+        line-height: 150px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        display: block;
+    }
+
+        ul.speakerflex li div img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        ul.speakerflex li p {
+            font-size: 1em;
+            font-weight: normal;
+            padding: 10px 0 0 0;
+        }
+
+
+
+.flexit {
+    display: flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+}

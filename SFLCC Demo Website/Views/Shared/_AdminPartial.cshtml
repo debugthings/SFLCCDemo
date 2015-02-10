@@ -1,0 +1,16 @@
+﻿@if (HttpContext.Current.User.IsInRole("Admin"))
+{
+    <div class="sflcc-headerbox">
+        <div class="sflcc-header color-beach-m-bg">
+            <ul>
+                <li>@Html.ActionLink("ADMIN", "Index", "Home")</li>
+                <li>@Html.ActionLink("ADMIN", "Register", "Account")</li>
+                <li>@Html.ActionLink("ADMIN", "Agenda", "Home")</li>
+                <li>@Html.ActionLink("ADMIN", "Speakers", "Home")</li>
+                <li>@Html.ActionLink("ADMIN", "Location", "Home")</li>
+                <li>@Html.ActionLink("ADMIN", "Sponsors", "Home")</li>
+                <li>@Html.ActionLink("ADMIN", "Login", "Account")</li>
+            </ul> 
+        </div>
+    </div>
+}

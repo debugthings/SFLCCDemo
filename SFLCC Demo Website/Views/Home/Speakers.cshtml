@@ -1,0 +1,17 @@
+﻿@model IEnumerable<SFLCC_Demo_Website.Models.Speaker>
+
+@{
+    ViewBag.Title = "Speakers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="sflcc-headerbox">
+    <div class="sflcc-header color-beach-m-bg">
+        <ul class="speakerflex">
+            @foreach (var item in Model)
+            {
+                string imageurl = item.SpeakerImage == "http://" ? "" : item.SpeakerImage;
+                <li><div style="height: 200px"><img src="@imageurl" /></div><p>@Html.ActionLink(item.SpeakerName, "Speaker", "Home", new { id = item.SpeakerId}, new { })</p></li>
+            }
+        </ul>
+    </div>
+</div>

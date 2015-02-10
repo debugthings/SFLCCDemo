@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    @{ string ccHeader = "cd-fixed-bg"; }
+    @if (ViewContext.RouteData.Values["action"] == "Index")
+    {
+        ccHeader = "cd-fixed-bg cd-bg-1";
+    }
+    else if (ViewContext.RouteData.Values["action"].ToString() == "Speaker")
+    {
+        ccHeader = "cd-fixed-bg color-beach-m-bg";
+    }
+    <div class="@ccHeader" id="codecamp">
+        <div class="sflcc-headerbox">
+            <div class="sflcc-header color-beach-m-bg">
+                <h1 class="color-beach-o txt-shadow">South Florida Code Camp</h1>
+                @if (ViewContext.RouteData.Values["action"] == "Index")
+                {
+                    <h2 class="color-beach-o txt-shadow">February 7th, 2015 - Nova Southeastern Univeristy</h2>
+                }
+            </div>
+        </div>
+        <div class="sflcc-headerbox">
+            <div class="sflcc-header color-beach-m-bg">
+                <ul>
+                    <li>@Html.ActionLink("HOME", "Index", "Home")</li>
+                    <li>@Html.ActionLink("REGISTER", "Register", "Account")</li>
+                    <li>@Html.ActionLink("AGENDA", "Agenda", "Home")</li>
+                    <li>@Html.ActionLink("SPEAKERS", "Speakers", "Home")</li>
+                    <li>@Html.ActionLink("LOCATION", "Location", "Home")</li>
+                    <li>@Html.ActionLink("SPONSORS", "Sponsors", "Home")</li>
+                    <li>@Html.ActionLink("LOGIN", "Login", "Account")</li>
+                </ul>
+            </div>
+        </div>
+        @if (HttpContext.Current.User.IsInRole("Admin"))
+        {
+            Html.Partial("_AdminPartial");
+        }
+        @if (ViewContext.RouteData.Values["action"].ToString() != "Index" )
+        {
+           @RenderBody()
+        }
+    </div>
+    @if (ViewContext.RouteData.Values["action"].ToString() == "Index" )
+    {
+        @RenderBody()
+    }
+    <hr />
+    <footer>
+        <p>&copy; @DateTime.Now.Year - James Davis (<a href="http://www.debugthings.com">www.debugthings.com</a>)</p>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @*@Scripts.Render("~/bundles/bootstrap")*@
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+    window.appInsights={queue:[],applicationInsightsId:null,accountId:null,appUserId:null,configUrl:null,start:function(n){function u(n){t[n]=function(){var i=arguments;t.queue.push(function(){t[n].apply(t,i)})}}function f(n,t){if(n){var u=r.createElement(i);u.type="text/javascript";u.src=n;u.async=!0;u.onload=t;u.onerror=t;r.getElementsByTagName(i)[0].parentNode.appendChild(u)}else t()}var r=document,t=this,i;t.applicationInsightsId=n;u("logEvent");u("logPageView");i="script";f(t.configUrl,function(){f("//az416426.vo.msecnd.net/scripts/v/ai.0.7.js")});t.start=function(){}}};
+
+    appInsights.start("1ee2dab5-1e9f-4f58-91f7-a8114aca2a91");
+    appInsights.logPageView();
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SFLCC Demo Website", "SFLCC Demo Website\SFLCC Demo Website.csproj", "{F8EA4D08-301B-41B5-A926-B5666B11DC52}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{193AF3AF-FB0C-4A49-9FC6-BC83F0F4D5FB}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{0CB18113-6F50-4DA9-80DD-BC34AFD2554D}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\SFLCCDemoWebsite-WAWS-dev.json = PublishScripts\Configurations\SFLCCDemoWebsite-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{85E68F31-1220-4EF0-977C-F6015AE2593A}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SFLCC Performance Test", "SFLCC Performance Test\SFLCC Performance Test.csproj", "{06EC6F5F-7EFB-4335-9A26-4B60F780FEEC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{65F4654A-646E-4D5A-BB2F-C7E3FEE87464}"
+	ProjectSection(SolutionItems) = preProject
+		cloud.testsettings = cloud.testsettings
+		Local.testsettings = Local.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SFLCFC Data Extract Tool", "SFLCFC Data Extract Tool\SFLCFC Data Extract Tool.csproj", "{06FAD9F8-DB9A-4212-A971-DDAD96E440E9}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "SFLCC Demo Website.Azure", "SFLCC Demo Website.Azure\SFLCC Demo Website.Azure.ccproj", "{A3342941-A495-4E16-8567-1F34A51B3757}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://sflccdemo.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SFLCC\u0020Demo\u0020Website.Azure\\SFLCC\u0020Demo\u0020Website.Azure.ccproj
+		SccProjectName1 = SFLCC\u0020Demo\u0020Website.Azure
+		SccLocalPath1 = SFLCC\u0020Demo\u0020Website.Azure
+		SccProjectUniqueName2 = SFLCC\u0020Demo\u0020Website\\SFLCC\u0020Demo\u0020Website.csproj
+		SccProjectName2 = SFLCC\u0020Demo\u0020Website
+		SccLocalPath2 = SFLCC\u0020Demo\u0020Website
+		SccProjectUniqueName3 = SFLCC\u0020Performance\u0020Test\\SFLCC\u0020Performance\u0020Test.csproj
+		SccProjectName3 = SFLCC\u0020Performance\u0020Test
+		SccLocalPath3 = SFLCC\u0020Performance\u0020Test
+		SccProjectUniqueName4 = SFLCFC\u0020Data\u0020Extract\u0020Tool\\SFLCFC\u0020Data\u0020Extract\u0020Tool.csproj
+		SccProjectName4 = SFLCFC\u0020Data\u0020Extract\u0020Tool
+		SccLocalPath4 = SFLCFC\u0020Data\u0020Extract\u0020Tool
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8EA4D08-301B-41B5-A926-B5666B11DC52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8EA4D08-301B-41B5-A926-B5666B11DC52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8EA4D08-301B-41B5-A926-B5666B11DC52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8EA4D08-301B-41B5-A926-B5666B11DC52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06EC6F5F-7EFB-4335-9A26-4B60F780FEEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06EC6F5F-7EFB-4335-9A26-4B60F780FEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06EC6F5F-7EFB-4335-9A26-4B60F780FEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06EC6F5F-7EFB-4335-9A26-4B60F780FEEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06FAD9F8-DB9A-4212-A971-DDAD96E440E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06FAD9F8-DB9A-4212-A971-DDAD96E440E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06FAD9F8-DB9A-4212-A971-DDAD96E440E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06FAD9F8-DB9A-4212-A971-DDAD96E440E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3342941-A495-4E16-8567-1F34A51B3757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3342941-A495-4E16-8567-1F34A51B3757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3342941-A495-4E16-8567-1F34A51B3757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3342941-A495-4E16-8567-1F34A51B3757}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0CB18113-6F50-4DA9-80DD-BC34AFD2554D} = {193AF3AF-FB0C-4A49-9FC6-BC83F0F4D5FB}
+	EndGlobalSection
+EndGlobal

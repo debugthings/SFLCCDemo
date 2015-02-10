@@ -1,0 +1,16 @@
+﻿@model SFLCC_Demo_Website.Models.Speaker
+
+@{
+    ViewBag.Title = Model.SpeakerName;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="sflcc-header color-beach-m-bg flexit" style="display:flexbox">
+    @{string imageurl = Model.SpeakerImage == "http://" ? "" : Model.SpeakerImage;}
+    <div style="height: 100%; display: flex; display:flexbox; justify-content: flex-end; align-items: flex-start">
+        <img src="@imageurl" />
+        <div style="height: 100%; width: 80%">
+            <h1>@Html.DisplayFor(modelItem => Model.SpeakerName)</h1>
+            <p>@Model.SpeakerBio</p>
+        </div>
+    </div>
+</div>
